@@ -1,0 +1,34 @@
+\ProvidesPackage{mystyle}
+
+\pdfstringdefDisableCommands{\let\uppercase\relax}
+	
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{indentfirst}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{color}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{mathtools}
+\usepackage[brazilian, hyperpageref]{backref}	 % Paginas com as citações na bibl
+\usepackage[alf]{abntex2cite}	% Citações padrão ABNT
+
+\definecolor{blue}{RGB}{41,5,195}
+\hypersetup{
+	hidelinks,	    		% links without color
+	colorlinks=true,		% false: boxed links; true: colored links
+	linkcolor=blue,          	% color of internal links
+	citecolor=blue,        		% color of links to bibliography
+	filecolor=magenta,      	% color of file links
+	urlcolor=blue,			% color of url links
+	bookmarksdepth
+}
+
+\setlength{\parindent}{1.3cm}
+\setlength{\parskip}{0.2cm}
+\renewcommand{\lstlistingname}{Código}
+%\renewcommand{\ABNTEXchapterfont}{\fontfamily{cmr}\fontseries{b}\selectfont}
+%\renewcommand{\ABNTEXchapterfont}{\rmfamily}
+%\renewcommand{\ABNTEXchapterfont}{\sffamily}

@@ -1,0 +1,20 @@
+\chapter{Metodologia} \label{chap:metodologia}
+
+\section{Definição da estrutura de tópicos \mqtt{}}
+
+A primeira etapa do trabalho consistirá em definir uma estrutura de tópicos no \broker{} \mqtt{}, onde as mensagens geradas pelos eventos de descoberta, conexão e desconexão serão publicadas. A estrutura de tópicos deve permitir flexibilidade para as aplicações indicarem interesse nos eventos.
+
+\section{Implementação no \middleware{} \mhubcddl{}}
+
+O trabalho seguirá com a implementação de um novo módulo no \mhubcddl{} que gera os eventos de descoberta, conexão e desconexão, e os publica em um \broker{} \mqtt{} seguindo a estrutura de tópicos defina ateriormente.
+
+Também será desenvovido uma interface que permite que os desenvolvedores indiquem que suas aplicações possuem interesse em determinados eventos.
+
+\section{Teste e validação}
+
+Serão avaliados parâmetros de acurácia e performance da solução. A acurácia representa a quantidade de notificações efetivamente entregues à aplicação, e o performance se refere a velocidade com que a entrega das mensagens é feita.
+
+Para realizar as medições mencionadas, será utilizado um caso de uso simulado com um \dataset{}, onde um indivíduo se locomove em sua residencia enquanto seu \smartphone{} descobre e se conecta com os \smartobjs{} localizados na casa. As notificações geradas neste caso de uso serão então analizadas para determinar a porcentagem de perdas e o tempo em que elas levam até chegaram na camada de aplicação.
+
+Como resultado da investigação preliminar, destaca-se o \dataset{} disponibilizado por \citeonline{byrne2018residential} como potencialmente relevante para os testes propostos.
+

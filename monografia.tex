@@ -1,0 +1,36 @@
+\documentclass[
+	12pt,		%font size
+	a4paper,	%paper size
+	openright,	%chapters start at odd pages
+	oneside,	%uses only one side of the paper
+	%twoside,	%uses both sides of the paper
+	brazil		%default iphenation idiom
+]{abntex2}
+
+
+\usepackage{mystyle}
+\input{macros.tex}
+
+\begin{document}
+
+\imprimircapa
+\imprimirfolhaderosto
+
+\input{tex/folha-de-aprovacao}
+\input{tex/resumo}
+
+\tableofcontents
+\cleardoublepage
+
+\textual
+
+\input{tex/introducao}
+\input{tex/metodologia}
+\input{tex/resultados-esperados}
+\input{tex/cronograma}
+
+\postextual
+
+\bibliography{bib/biblio}
+
+\end{document}
